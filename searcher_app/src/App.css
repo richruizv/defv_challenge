@@ -1,31 +1,53 @@
-.App {
-  text-align: center;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-recipe{
+  background-color: #2e7d32;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar-recipe * {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.img-banner{
+  width: 100%;
+  height: 33vh;
+  color: white;
+  position: relative;
+}
+.banner-cover{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  z-index: 0;
+  padding-top: 3rem;
+  text-align: center;
+}
+
+.text-cta{
+  text-shadow: 1px 1px 4px #000000;
+}
+.input-search{  
+  padding: 12px 20px;
+  font-size: 1rem;
+  text-align: center;
+  outline: transparent;
+  border-radius: 6px;
+  border-width: 5px;
+  border-style: solid;
+  width: 100%;
+}
+
+.card-image{
+  width: 100%;
+  height: 200px;
+
+}
+.card-title{
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @keyframes App-logo-spin {

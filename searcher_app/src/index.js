@@ -1,11 +1,11 @@
 import ReactDOM from "react-dom";
-import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import Layout from './pages/Layout';
 import Detail from './pages/Detail'
 import NoPage from './pages/Nopage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
