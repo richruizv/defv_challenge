@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
 import { useState } from "react";
-import { RAPIDAPIKEYS } from "../utils/global";
+import { RAPIDAPIKEYS,RAPIDAPIURL } from "../utils/global";
 
 
 function withParams(Component) {
@@ -21,12 +21,13 @@ class Detail extends React.Component {
             }
         }
         this.apikeys = RAPIDAPIKEYS
+        this.url = RAPIDAPIURL
     }
 
     componentDidMount() {
         let { id } = this.props.params;
         this.setState({ isLoading : false})
-        fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/'+id+'/information',
+        fetch(this.url+'recipes/'+id+'/information',
         {
         method : 'get' ,
         headers : {

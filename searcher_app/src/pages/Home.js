@@ -1,6 +1,6 @@
 import React from "react";
 import {  Link } from "react-router-dom";
-import { RAPIDAPIKEYS } from "../utils/global";
+import { RAPIDAPIKEYS,RAPIDAPIURL } from "../utils/global";
 import banner from "../assets/img/banner.jpg"
 class Home extends React.Component {
 
@@ -21,6 +21,7 @@ class Home extends React.Component {
     }
 
     this.handleChange = this.handleChange.bind(this);
+    this.url = RAPIDAPIURL
   }
 
   handleChange(event) {
@@ -43,7 +44,7 @@ class Home extends React.Component {
       recipes : data.results,
       isLoading: false
     })*/
-    fetch('https://spoonacular-recipe-food-nutrition-v1.p.rapidapi.com/recipes/search?query='+query,
+    fetch(this.url+'recipes/search?query='+query,
       {
         method : 'get' ,
         headers : {
