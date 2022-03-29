@@ -35,6 +35,8 @@
       "last 1 safari version"
     ]
   },
-  "homepage": "."
-
+  "homepage": ".",
+  "devDependencies": {
+    "react-router-dom": "^6.2.2"
+  }
 }
