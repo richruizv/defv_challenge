@@ -1,5 +1,5 @@
 # devf_challenge
-## Application to check recipes using leftlovers
+## 🍱 Application to check recipes using leftlovers
 
 With this application you can find the adequate recipe using the ingredients you have, just put the ingredients separated with coma in the searcher and the application will find from a vast collection of recipes the most adequate.
 
