@@ -102,7 +102,7 @@ class Home extends React.Component {
              { !firstQuery && !isLoading &&
               <div className="row">
                 { recipes.length > 0 && <h4> {recipes.length} results founded: </h4>}
-                { recipes.length == 0 && <h4> We can't find results with these ingredient</h4> }
+                { recipes.length === 0 && <h4> We can't find results with these ingredient</h4> }
                 {recipes.map(function(recipe,i) {
                   return <div  className="col-md-3" key={i}>
                           <div className="card mb-3" >

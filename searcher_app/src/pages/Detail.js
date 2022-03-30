@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
 import { RAPIDAPIKEYS,RAPIDAPIURL } from "../utils/global";
 
 
@@ -60,7 +59,7 @@ class Detail extends React.Component {
                         </div>
                         <div className="row">
                             <div className="col-md-6">
-                                <img className="img-fluid rounded" title={recipe['title']} src={recipe['image']} />
+                                <img className="img-fluid rounded" alt={recipe['title']} src={recipe['image']} />
                             </div>
                             <div className="col-md-6">
                                 <h2> hi  {recipe['title']}</h2>
@@ -96,7 +95,7 @@ class Detail extends React.Component {
                                     {
                                     recipe['extendedIngredients'].map(function(ingredient,i) {
                                         return <tr  key={i}>
-                                                    <td><img width="50" title={ingredient['aisle']} src={" https://spoonacular.com/recipeImages/"+ingredient['image']} /></td>
+                                                    <td><img width="50" alt={ingredient['aisle']} src={" https://spoonacular.com/recipeImages/"+ingredient['image']} /></td>
                                                     <td>{ingredient['original']}</td>
                                                     <td>{ingredient['measures']['metric']['amount']} {ingredient['measures']['metric']['unitLong']}</td>
                                                 </tr>;
