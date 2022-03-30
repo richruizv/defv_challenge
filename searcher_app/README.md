@@ -3,7 +3,7 @@
 
 With this application you can find the adequate recipe using the ingredients you have, just put the ingredients separated with coma in the searcher and the application will find from a vast collection of recipes the most adequate.
 
-You can watch live here ()()
+You can watch live demo here [https://leftloversapp.herokuapp.com/](https://leftloversapp.herokuapp.com/)
 
 
 ## Technologies
